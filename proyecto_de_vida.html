@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+        
+        <html>
+                <head>
+                    <meta charset="utf-8"> 
+                    <title> proyecto de vida </title>
+
+                    <style>
+                    *
+                    {
+                        margin: 0px;
+                    }
+                    body
+                    {
+                      margin: 0%;
+                      background-color: #b0f2c2;
+                    }
+                    #header
+                    {
+                        margin: auto;
+                        width: 500px;
+                        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                    }
+                    ul, ol
+                    {
+                        list-style: none;
+                    }
+                    .nav li a
+                    {
+                        background-color: #fcb7af;
+                        color: azure;
+                        text-decoration: none;
+                        padding: 10px 15px;
+                        display: block;
+                    }
+                    .nav li a:hover
+                    {
+                        background-color: #b2e2f2;
+                    }
+                    .nav > li
+                    {
+                        float: left;
+                    }
+                    .nav li ul
+                    {
+                        display: none;
+                        position: absolute;
+                        min-width: 140px;
+                    }
+                    .nav li:hover > ul
+                    {
+                        display: block;
+                    }
+                    .nav li ul li 
+                    {
+                        position: relative;
+                    }
+                    .nav li ul li ul 
+                    {
+                        right: -140px;
+                        top: 0%;
+                    }
+                    .contier
+                     {
+                      background-color: #fcb7af;
+                      display: flex;
+                     }
+                     .menu_principal
+                     {
+                        align-items: center;
+                        position: relative;
+                        top: 50%;
+                        left: 50%;
+                        text-align: center;
+                     }
+                     .menu_principal a 
+                    {
+                        text-decoration: none;
+                        align-items: center;
+                        color: #b0c2f2;
+                    }
+                    a:hover
+                    {
+                        color:hsl(0, 0%, 100%)
+                    }
+                    #main
+                    {
+                        
+                    }
+                    .titulos
+                    {
+                        text-align: center;
+                        font-size: xx-large;
+                        font-family: fantasy;
+                    }
+                    .caja
+                    {
+                        word-break: break-all;
+                        height: flex;
+                        width: 38%;
+                        border-radius: 1em;
+                        margin: 1em auto;
+                        pading: 0.5em;
+                        background: skayblue;
+                        text-align:left;
+                        background: linear-gradient(#5086c1, white, #b2dafa);
+                        float: left;
+                        padding: 20px;
+                        
+                    }
+                    .caja0
+                    {
+                        width: 150px;
+                        height: 10px;
+                        top: 20%;
+                        left: 20%;
+                        background-color: transparent;
+                        float: left;
+                    }
+                    .caja2
+                    {
+                        word-break: break-all;
+                        height: flex;
+                        width: 20%;
+                        border-radius: 1em;
+                        margin: 1em auto;
+                        pading: 0.5em;
+                        text-align:left;
+                        background: linear-gradient(#5086c1, white, #b2dafa);
+                        float: right;
+                        padding: 20px;
+                    }
+                    .caja2 img
+                    {
+                         width: 180px; 
+                         height:flex;
+                    }
+                    #reloj {
+                        position: relative;
+                        top: 10px;
+                        right: 10px;
+                        font-size: 20px;
+                        color: #52ffbf;
+                        background-color: #000000;
+                        padding: 10px;
+                        border-radius: 5px;
+                   }
+                    .caja3
+                    {
+                        width: 150px;
+                        height: 10px;
+                        background-color: transparent;
+                        float: inline-end;
+                    }
+                    .footer
+                    {
+                        background-color: #ba9df4;
+                        position: flex;
+                        padding: 40px;
+                        display: inline-flexbox;
+                        font-weight: 500;
+                        max-width: 2000px;
+                        margin: 0 auto;
+                        flex-wrap: wrap;
+                        min-height: 70px;
+                        filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#191919', endColorStr='#000000');
+                        border-top: 1px solid rgba(50, 50, 50, 0.3);
+                        width: 100%;
+                        position: relative;
+                        clear: both;
+                        margin-top: 0px;
+                        padding-top: 0px;
+                        overflow: visible;
+                    }
+                    .click
+                    {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .click li, ul
+                    {
+                        list-style: none;
+                        font-size: large;
+                        
+                    }
+                    .footer a
+                    {
+                        text-decoration: none;
+                        font-size: 18px;
+                        display: block;
+                        margin-bottom: 15px;
+                        transition: all .3s ease;
+                    }
+                    .footer a:hover
+                    {
+                        color:#fcb7af;
+                        padding-left: 6px;
+                    }
+                    .click h3
+                    {
+                        border-bottom: 2px solid #fcb7af;
+                        display: inline-block;
+                        padding-bottom: 10px;
+                        margin-bottom: 25px;
+                    }
+                    .contactos
+                    {
+                        
+                        width: 20%;
+                        text-align:left;
+                        float: right;
+                        display: block;
+                    }
+                    #le
+                    {
+                        text-align: left;
+                        font-size: x-large;
+                        font-family: fantasy;
+                        color:#3e01b9;
+                    }
+                    iframe
+                    {
+                        width: 180px; 
+                        height:flex;
+                        
+                    }
+                    @media (max-whidch:700px)
+                    {
+                     header 
+                      {
+                        flex-direction: column;
+                      }
+                        nav
+                      {
+                         padding: 10px 0px;
+                      }
+                    }
+                    </style>
+
+                </head>
+
+                <body>
+                     <header>
+                        <div class="contier">
+                        <div class="menu_principal">
+                            <ul class="nav">
+                               <li><a href="#">Temas</a>
+                                <ul>
+                                    <li><a href="#tema1">Mira de serie blanca</a>
+                                    <ul>
+                                        <li><a href="#sub1">Anemias</a></li>
+                                    </ul>
+                                    </li>
+                                    <li><a href="#tema2">Serie roja </a>
+                                        <ul>
+                                            <li><a href="#sub2">Banco de sangre</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#tema3">Inmunología</a>
+                                        <ul>
+                                            <li><a href="#sub3">Bioquímicas</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                       
+                               </li>
+                            
+                            <li><a href="#">Videos sobre los temas</a>
+                               <ul>
+                                <li><a href="#vid1">video1</a></li>
+                                <li><a href="#vid2">video2</a></li>
+                                <li><a href="#vid3">video3</a></li>
+                               </ul>
+                            </li>
+                            
+                            <li><a href="#sobre">Sobre Nosotros</a></li>
+                        </ul>
+                        </div>
+                        </div>
+                     </header>
+                     
+                     <main>
+                        <div class="titulos">
+                            Mira de serie blanca,Serie roja,Inmunología.
+                        </div>
+                        <div class="caja0">
+                            <p> </p>
+                        </div>
+
+                        <div class="caja">
+                            <p> 
+                                <section id=tema1>
+                                 <font face="Comic Sans MS,Arial,Verdana">
+                                <center class="titulos"> Mira de serie blanca </center>
+                                El hemograma es la parte de la analítica que analiza varios parámetros de la sangre, como son los glóbulos rojos, las células de defensa o glóbulos blancos, así como las plaquetas y factores de coagulación.
+                                El médico solicitará unos u otros en función de lo que se quiere investigar. Sin embargo, dado que se tiene que realizar una extracción de sangre, se aprovecha la gran mayoría de veces para evaluar una serie de parámetros, 
+                                como la glicemia, la función renal y hepática o el colesterol y el hemograma.
+                                Los laboratorios de hematología tienen una serie de herramientas metodológicas que permiten validar los resultados de los parámetros de manera automática, sin embargo, 
+                                nada suple que un especialista en hematología del laboratorio valore alteraciones más sutiles en la forma de las células que los analizadores no pueden detectar. Asimismo, 
+                                cabe decir que los parámetros de normalidad pueden variar levemente de un laboratorio a otro y las variaciones de la normalidad siempre deben ser evaluadas por su médico. <br>
+
+                                 <br><h3>Serie blanca</h3><br>
+                                Su estudio nos permite valorar estados de infección o de alteraciones de la inmunidad. No se diferencian los valores en función del género y se expresan tanto en números totales como en porcentajes del tipo de leucocitos. Los parámetros más habituales que se estudian son:
+                              <ul>
+                                ♥Leucocitos: total de glóbulos blancos que hay en sangre; sus valores suelen oscilar entre 4.000-10.000/mm3. <br>
+                                ♥Neutrófilos: un tipo de leucocitos que se eleva en general con las infecciones bacterianas; sus valores de referencia son 2.000-7.500/mm3 o 40-75%. <br>
+                                ♥Linfocitos: una clase de glóbulos blancos que se eleva sobre todo en infecciones víricas y que producen anticuerpos; sus valores de normalidad son 1.500-4.000/mm3 o 20-45%. <br>
+                                ♥Monocitos: un tipo de leucocitos que una vez activo se convierte en un macrófago, que se encarga de fagocitar, es decir, “comerse” a varios microorganismos; sus valores de referencia son 200-800/mm3 o 2-10%. <br>
+                                ♥Eosinófilos: una clase de leucocitos que se activa ante reacciones alérgicas o la presencia de microorganismos que no se pueden fagocitar; sus valores de referencia son 40-400/mm3 o 1-3%. <br>
+                                ♥Basófilos: unos leucocitos implicados también en la gestión de las reacciones alérgicas; sus valores de referencia son 10-100/mm3 o menos de un 1%. <br>
+                              </ul>
+                              <section id="sub1">
+                                 <details>
+                                    <summary id="le"> Anemias </summary>
+                                        <div>
+                                           <br><h3> Factores de riesgo para anemia </h3><br>
+                                            Hay numerosos factores de riesgo de anemia. Por ejemplo, una dieta vegetariana predispone a anemia por deficiencia de vitamina B12, mientras que el alcoholismo aumenta el riesgo de anemia por deficiencia de ácido fólico. Varias hemoglobinopatías son hereditarias, y ciertos fármacos e infecciones predisponen a la hemólisis. El cáncer, los trastornos reumáticos y los trastornos inflamatorios crónicos pueden suprimir la producción de eritrocitos. Ciertos trastornos autoinmunitarios como lupus eritematoso sistémico o linfoma pueden predisponer a anemia hemolítica autoinmunitaria.
+                                            
+                                            <br><h3>Síntomas de la anemia</h3><br>
+                                            Los síntomas de anemia no son sensibles ni específicos, y no ayudan a diferenciar los tipos de anemia. Los síntomas reflejan las respuestas compensadoras y suelen aparecer cuando el nivel de hemoglobina desciende bastante por debajo del valor basal del paciente. Los síntomas suelen ser más pronunciados en pacientes con reserva cardiopulmonar limitada o cuando la anemia se desarrolla muy rápidamente.
+                                            
+                                            Los síntomas como debilidad, fatiga, mareos, angina, síncope y disnea de esfuerzo pueden indicar anemia. También es posible observar vértigo, cefalea, acúfenos pulsátiles, amenorrea, pérdida de la libido y síntomas digestivos.
+                                            
+                                            Los pacientes con hipoxia tisular o hipovolemia graves pueden presentar insuficiencia cardíaca o shock.
+                                            
+                                            <br><h3>Síntomas que sugieren la causa de la anemia</h3><br>
+                                            Ciertos síntomas pueden sugerir la causa de la anemia. Por ejemplo, la melena, la epistaxis, la hematoquecia, la hematemesis o la hipermenorrea indican hemorragia. La ictericia y la orina oscura, en ausencia de enfermedad hepática, sugieren hemólisis. La pérdida de peso puede sugerir cáncer. El dolor óseo o torácico intenso puede indicar drepanocitosis, y las parestesias en guante-calcetín, deficiencia de vitamina B12.
+                                        </div>
+                                 </details>
+                                </section>
+                            </section>
+                            <hr>
+                            <section id=tema2>
+                                <center class="titulos"> Serie roja </center>
+                                En la serie roja valoramos esencialmente el número de hematíes que hay en sangre, el porcentaje de sangre que ocupan, la cantidad de hemoglobina que tiene cada uno de promedio, su forma y volumen, entre otros parámetros. Estos parámetros nos permiten estudiar estados de anemia, entre otras enfermedades.
+                                <br><h3> Serie eritrocitaria o serie roja </h3><br>
+                                Los principales parámetros son el recuento de hematíes, el valor de hematocrito, la concentración de hemoglobina, los índices eritrocitarios (VCM, HCM, CHCM) y el índice de distribución de los hematíes.
+                                La determinación de todos ellos va dirigida al diagnóstico de anemias.
+                                <br><h3> Significados de las siglas: </h3><br>
+                                <ul>
+                                ♥Hb: Hemoglobina. Hb SS: Componente homocigoto de la drepanocitosis. <br>
+                                ♥Hb CS: Comoponente heterocigoto de la drepanocitosis. <br>
+                                ♥PTT: Púrpura trombótica trombocitopénica. <br>
+                                ♥CID: Coagulación Intravascular diseminada. <br>
+                                ♥TCD: Test de coombs directo. <br>
+                                ♥SMD: Síndrome mielodisplásico.<br>
+                                </ul>
+                                <br><h3>DEFINICIONES SERIE ROJA </h3>
+                                <br><h3>ACANTOCITOS: </h3><br>
+                                Células especuladas, en espuela. Célula pequeña con escasas espículas de longitud variable, distribuidas en forma irregular. 
+                                
+                                <br><h3>ANILLOS DE CABOT: </h3><br>
+                                Restos de membrana nuclear o huso mitótico en glóbulos rojos, pueden adoptar diversas formas o ser únicos o múltiples.
+
+                                <br><h3>ANISOCROMÍA: </h3><br>
+                                Presencia en el frotis de glóbulos rojos hipocromos y normocromos. El estimador que clasifica en cruces la semicuantificación es la amplitud de Distribución de la Hemoglobina.
+                                
+                                <br><h3>AUTOAGLUTINACIÓN: </h3><br>
+                                Aglutinación de glóbulos rojos formando pequeñas o grandes masas de forma irregular.
+
+                                <br><h3>CODOCITOS: </h3><br>
+                                 Célula en diana. Célula hipocrómica con zona central de pigmento de hemoglobina, célula delgada.
+
+                                <br><h3>CUERPOS DE HOWEL JOLLY: </h3><br>
+                                Corresponden a uno o más fragmentos de núcleo de 1 µm en la periferia del glóbulo rojo, característicamente son esféricos, picnóticos de color azul con tinción MGG (May Grünwald -Giemsa ). micronúcleos.
+
+                                <br><h3>DACRIOCITOS: </h3><br>
+                                Célula en lágrima. Célula con un extremo puntiagudo, en forma de gota.
+
+                                <br><h3>DREPANOCITOS: </h3><br>
+                                Células falciformes. Eritrocitos delgados, largos, aguzados en ambos extremos, sin palidez central.
+
+                                <br><h3>ELIPTOCITOS: </h3><br>
+                                Célula suficientemente larga para tener dos lados paralelos con apariencia de cigarrillo.
+
+                                <br><h3>ERITROBLASTOS: </h3><br>
+                                 Precursores de la serie eritroide, en el hemograma se informa el número de eritroblastos encontrados al realizar el recuento diferencial.
+
+                                <br><h3>ESQUISTOCITOS: </h3><br>
+                                También llamada esquizocitos. Célula fragmentada, contraída de manera irregular.
+
+                                <br><h3>EQUINOCITO/CRENOCITO: </h3><br>
+                                Célula en erizo. Células con múltiples proyecciones romas distribuidas de manera regular
+
+                                <br><h3>ESFEROCITOS: </h3><br>
+                                 Células pequeñas, redondas, sin palidez central; por lo general microcíticas. El VCM se mantiene porque solamente pierde superficie celular.
+
+                                <br><h3>ESTOMATOCITOS: </h3><br>
+                                Eritrocitos con una zona de palidez central con forma de hendidura. Semeja a una boca o estoma, del cual deriva su nombre. También llamado hidrocito.
+
+                                <br><h3>LEPTOCITOS: </h3><br>
+                                 Célula plana, delgada, con hemoglobina en la periferia y palidez central aumentada.
+
+                                <br><h3>MEGALOCITOS: </h3><br>
+                               Son glóbulos rojos grandes macrocitos ovales, donde se combina una alteración del tamaño y de la forma, pueden llegar hasta tener 12 µm de diámetro. Se observan en anemias megaloblásticas.
+
+                                <br><h3>MACROCITOS: </h3><br>
+                                Glóbulos rojos más grandes de lo normal que presentan halo central. El estimador hematológico es el volumen corpuscular medio.
+
+                                <br><h3>MEGALOBLASTOS: </h3><br>
+                                 Precursores hematológicos de tamaño grande.
+
+                                <br><h3>MICROCITOS: </h3><br>
+                                Glóbulos rojos más pequeños de lo normal y cromía variable. El estimador hematológico es el volumen corpuscular medio.
+
+                                <br><h3>OVALOCITOS: </h3><br>
+                                Célula ovoide o en forma de huevo que puede o no presentar halo central. En tamaño grande también es llamado megalocito.
+
+                                <br><h3>POLICROMATOFILIA: </h3><br>
+                                El concepto deriva del griego (Polys: Mucho, Chroma: Color, Philia: Afinidad). Polychromatophilia (inglés) y Polychromatophilie (francés). Glóbulos rojos de mayor tamaño de color azul grisáceo con tinción MGG (May Grunwald -Giemsa ) y equivalente a reticulocitos cuando se utiliza la tinción de ACB (azul cresol brillante).
+
+                                <br><h3>POIQUILOCITOSIS: </h3><br>
+                                 Glóbulos rojos con variación en la forma que orienta la patología hematológica.
+
+                                <br><h3>PUNTEADO BASÓFILO: </h3><br>
+                                 Glóbulos rojos con precipitado de ribosomas y polirribosomas. Se presentan en forma puntiforme y de color azul-grisáceo con la tinción de MGG.
+
+                            </section>
+                            <section id="sub2">
+                                <details>
+                                   <summary id="le">  Banco de sangre  </summary>
+                                       <div>
+                                          <br><h3> Factores de riesgo para anemia </h3><br>
+                                           Hay numerosos factores de riesgo de anemia. Por ejemplo, una dieta vegetariana predispone a anemia por deficiencia de vitamina B12, mientras que el alcoholismo aumenta el riesgo de anemia por deficiencia de ácido fólico. Varias hemoglobinopatías son hereditarias, y ciertos fármacos e infecciones predisponen a la hemólisis. El cáncer, los trastornos reumáticos y los trastornos inflamatorios crónicos pueden suprimir la producción de eritrocitos. Ciertos trastornos autoinmunitarios como lupus eritematoso sistémico o linfoma pueden predisponer a anemia hemolítica autoinmunitaria.
+                                           
+                                           <br><h3>Síntomas de la anemia</h3><br>
+                                           Los síntomas de anemia no son sensibles ni específicos, y no ayudan a diferenciar los tipos de anemia. Los síntomas reflejan las respuestas compensadoras y suelen aparecer cuando el nivel de hemoglobina desciende bastante por debajo del valor basal del paciente. Los síntomas suelen ser más pronunciados en pacientes con reserva cardiopulmonar limitada o cuando la anemia se desarrolla muy rápidamente.
+                                           
+                                           Los síntomas como debilidad, fatiga, mareos, angina, síncope y disnea de esfuerzo pueden indicar anemia. También es posible observar vértigo, cefalea, acúfenos pulsátiles, amenorrea, pérdida de la libido y síntomas digestivos.
+                                           
+                                           Los pacientes con hipoxia tisular o hipovolemia graves pueden presentar insuficiencia cardíaca o shock.
+                                           
+                                           <br><h3>Síntomas que sugieren la causa de la anemia</h3><br>
+                                           Ciertos síntomas pueden sugerir la causa de la anemia. Por ejemplo, la melena, la epistaxis, la hematoquecia, la hematemesis o la hipermenorrea indican hemorragia. La ictericia y la orina oscura, en ausencia de enfermedad hepática, sugieren hemólisis. La pérdida de peso puede sugerir cáncer. El dolor óseo o torácico intenso puede indicar drepanocitosis, y las parestesias en guante-calcetín, deficiencia de vitamina B12.
+                                       </div>
+                                </details>
+                               </section>
+                            <hr>
+                            <section id=tema3>
+                                <center class="titulos"> Inmunología </center>
+                                La inmunología es una rama amplia de las ciencias biomédicas que se ocupa del estudio del sistema inmunitario, entendiendo como tal al conjunto de órganos, tejidos y células que, en los vertebrados, tienen como función reconocer elementos ajenos dando una respuesta (respuesta inmunitaria).
+                                ​La ciencia trata, el funcionamiento fisiológico del tanto en estados de salud como de enfermedad; las alteraciones en las funciones del sistema inmunitario (enfermedades autoinmunitarias, hipersensibilidades, inmunodeficiencias, rechazo a los trasplantes); las características físicas, 
+                                químicas y fisiológicas de los componentes del sistema inmunitario. La inmunología tiene varias aplicaciones en numerosas disciplinas científicas, que serán analizadas más adelante.
+
+                                <h3>Concepto</h3>
+                                La palabra inmunidad deriva del término latino immunitas. Así que alguien inmune se entendía como exento o libre de impuestos (y/o servicios). Posteriormente, en 1879 el bacteriólogo francés Louis Pasteur acuñó una nueva acepción Immünire - ("in desde el interior y "munera" significando munición, armamento o trinchera) que es el concepto que entendemos en la actualidad: defenderse desde el interior. — es el origen de la palabra inmunidad, 
+                                que se refiere al estado de protección frente a infecciones.
+
+                                <h3>Perspectiva histórica</h3>
+
+                                Viruela, una enfermedad letal y deformante.
+                                La disciplina de la inmunología surgió cuando se observó que los individuos recuperados de ciertos trastornos infecciosos quedaban protegidos frente a una posible segunda infección. Se cree que la primera referencia que describe a los fenómenos inmunitarios fue escrita por Tucídides, el historiador de las guerras del Peloponeso, en el año 430 a. C. Este texto describe que durante una plaga en Atenas, solo los que se habían recuperado de ella podían cuidar a los enfermos porque no contraían el padecimiento por segunda vez.2​
+                                Los primeros intentos registrados de inducir inmunidad de manera artificial los llevaron a cabo los chinos y los turcos en el siglo xv al intentar prevenir la viruela. Los informes describen el proceso de variolización en el que las costras secas dejadas por las pústulas de la viruela se inhalaban por las narinas o se insertaban en pequeños cortes de piel.2​
+                                En 1718, la aristócrata británica Lady Mary Wortley Montague a la vuelta de una estancia en Turquía, realiza la práctica de la variolización en sus propios hijos. Pero no es hasta 1796, que el médico inglés Edward Jenner, al observar el hecho de que las niñeras que habían contraído la enfermedad de la pústula vacuna o pústula mamaria de la vaca (una enfermedad leve) quedaban inmunes contra la viruela razonó que al introducir líquido de una pústula vacuna en una persona (inoculación) podía protegérsele contra la viruela. Verificó su hipótesis inoculando en un niño de ocho años de edad con líquido de una pústula vacuna y luego lo infectó de manera intencional con viruela; el niño no presentó la enfermedad.
+                            </section>
+                            <section id="sub3">
+                                <details>
+                                   <summary id="le">  Bioquímica  </summary>
+                                       <div>
+                                        <h3>¿Qué es la Bioquímica?</h3>
+                                        La bioquímica es la química de la vida, es decir, la rama de la ciencia que se interesa por la composición material de los seres vivientes. Esta ciencia estudia los compuestos elementales que conforman y permiten que los seres vivos se mantengan con vida: las proteínas, los carbohidratos, los lípidos y los ácidos nucleicos.
+                                        Por otra parte, la bioquímica también estudia los procesos y reacciones químicas que ocurren entre estos compuestos, tanto en las células como en el organismo. A este conjunto de reacciones bioquímicas se las denomina metabolismo, cuando se trata de la transformación de compuestos en otros, catabolismo, cuando se trata de la degradación de compuestos para la obtención de energía, y anabolismo, cuando se trata de la síntesis de compuestos complejos a partir de sustancias más simples.
+                                        La bioquímica existe como campo científico a partir de la distinción de la química orgánica (la que encabeza estructuralmente el carbono) y también la química inorgánica. Esta ciencia considera que las moléculas que componen a los seres vivos están formadas por carbono, hidrógeno, oxígeno, nitrógeno, fósforo y azufre, moléculas que a su vez conforman a las células, los órganos y sistemas de órganos que conforman a los seres vivos.
+                                        Es una ciencia eminentemente experimental, que recurre al método científico, es decir, a la comprobación de los experimentos mediante numerosas técnicas instrumentales propias y también de otras ramas de la ciencia como la estadística y la física. Su comprensión molecular de la vida es, lógicamente, consecuencia del desarrollo de la teoría celular y del desarrollo moderno de la física, química y biología.
+                                        <h3>Sinopsis</h3>
+                                        Bioquímica de Laguna nació en 1960, fue escrita por el doctor José Laguna y continuada por el doctor Enrique Piña Garza, fue a partir de la quinta edición que se tomó la decisión de invitar a varios profesores e investigadores para actualizar el contenido de este libro de texto. Dado el papel que el Dr. Piña ha jugado en mantener y actualizar, además de coordinar los trabajos para las diferentes ediciones, los actuales editores de la octava edición, han decidido cambiar el título de esta obra al de Bioquímica de Laguna y Piña.
+                                        La bioquímica, como todas las ciencias, se encuentra en constante evolución, por esa razón la presente edición incluye por primera vez figuras a todo color, así como nuevos capítulos, referencias actualizadas e inclusión de cuadros clínicos. Se adicionó al inicio de cada capítulo conceptos clave, los cuales pretenden destacar la información más relevante, así como preguntas de reforzamiento que permitan al lector realizar una autoevaluación de su aprendizaje. Se incluyó un nuevo capítulo de análisis clínicos que refleja cómo se realizan los procesos metabólicos en las personas y que ayuda al estudiante a diferenciar entre un sujeto sano y uno enfermo.
+                                        Estos cambios se implementaron con la intención de obtener una obra más didáctica, ágil y atractiva para los estudiantes, que facilite su autoaprendizaje y aporte ejemplos que les ayuden a comprender los fundamentos de la bioquímica.
+                                        <h3>Bioquímica e inmunología clínicas</h3>
+                                        La Division of Clinical Biochemistry & Immunology (División de Bioquímica e Inmunología Clínicas) proporciona análisis cualitativos y cuantitativos de secreciones biológicas, como la sangre, el suero sanguíneo, el plasma o la orina, o tejidos para detectar componentes químicos específicos o procesos fisiológicos. Los médicos utilizan estos resultados de las pruebas para detectar, diagnosticar o controlar enfermedades.
+                                        El personal de Clinical Biochemistry & Immunology (Bioquímica Clínica e Inmunología) también se dedica a la investigación aplicada para crear nuevas pruebas de diagnóstico de laboratorio clínico para identificar o controlar enfermedades, procesos de enfermedades o tratamientos de enfermedades. Algunos análisis elaborados por los laboratorios afiliados con la División de Bioquímica e Inmunología Clínicas incluyen los siguientes:
+                                        <br>♥Evaluación de los factores inmunitarios que causan una enfermedad.
+                                        <br>♥Evaluación de la función de los órganos endocrinos.
+                                        <br>♥Supervisión de la respuesta al tratamiento del cáncer.
+                                        <br>♥Evaluación de la inmunodepresión del trasplante.
+                                        <br>♥Evaluación de la variación genética en tratamientos de rutina.
+                                        <br>♥Evaluación del estado nutricional.
+                                        <br>♥Evaluación de la toxicidad de fármacos y metales.
+                                       </div>
+                                </details>
+                               </section>
+                                </font>
+                            </p>
+                        </div>
+
+                        <div class="caja3">
+                            <p> </p>
+                        </div> 
+
+                        <div class="caja2">
+                            <center>
+                            <p>         <img id="imagen" src="" alt="Imagen">
+                                        <script>
+                                            var imagenes = ["https://image.slidesharecdn.com/serie-blanca-1203748275930993-4/95/slide-24-1024.jpg", "https://image.slidesharecdn.com/serieroja-160524162918/95/citometra-hemtica-serie-roja-1-638.jpg?cb=1464107628.jpg", "https://www.cardiff.ac.uk/__data/assets/image/0006/553065/immunology.jpg"];
+                                            var index = 0;
+                                            var intervalo;
+                                
+                                            function cambiarImagen() {
+                                                var imgElement = document.getElementById("imagen");
+                                                imgElement.src = imagenes[index];
+                                
+                                                index++;
+                                
+                                                if (index >= imagenes.length) {
+                                                    index = 0;
+                                                }
+                                            }
+                                
+                                            function iniciarCambio() {
+                                                intervalo = setInterval(cambiarImagen, 3000);
+                                            }
+                                
+                                            function detenerCambio() {
+                                                clearInterval(intervalo);
+                                            }
+                                
+                                            // Iniciar cambio de imagen al cargar la página
+                                            window.onload = iniciarCambio;
+                                        </script>
+                                        <hr>
+                                        <p id="reloj">
+                                        <script>
+                                            function actualizarReloj() {
+                                                var fechaActual = new Date();
+                                                var hora = fechaActual.getHours();
+                                                var minutos = fechaActual.getMinutes();
+                                                var segundos = fechaActual.getSeconds();
+                                
+                                                minutos = minutos < 10 ? "0" + minutos : minutos;
+                                                segundos = segundos < 10 ? "0" + segundos : segundos;
+                                
+                                                var horaActual = hora + ":" + minutos + ":" + segundos;
+                                
+                                                document.getElementById("reloj").textContent = horaActual;
+                                            }
+                                
+                                            setInterval(actualizarReloj, 1000);
+                                        </script>
+                                        </p> <br>
+                                        <hr><section id="vid1">
+                                        <center class="titulos"> Mira de serie blanca </center>
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PiCqj5virk0?si=ZDOMnYeGbIZz5xCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </section> 
+                                        <hr><section id="vid2">
+                                        <center class="titulos"> Serie roja </center> 
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/yew9C4RftJg?si=uY5ku84SNu2pEF-E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </section>
+                                        <hr><section id="vid3">
+                                        <center class="titulos"> Inmunología </center> 
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ir_2MYRb8MM?si=aPCwJJfbvKTknmBO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </section>
+                            </p>
+                        </center>
+                        </div>
+                        
+                     </main>
+                     <footer class="footer">
+                        <section id="sobre">
+                        <div class="click">
+                            
+                                    <ul>
+                                        <li><h3>Libros</h3></li>
+                                        <li><a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.ispch.cl/sites/default/files/documento/2013/04/RECOMENDACIONES%20PARA%20LA%20INTERPRETACION%20DEL%20HEMOGRAMA%20SERIE%20%20ROJA,%20BLANCA%20Y%20PLAQUETARIA.PDF">-RECOMENDACIONES PARA LA INTERPRETACIÓN DEL HEMOGRAMA: <br> SERIE ROJA, BLANCA Y PLAQUETARIA</a></li>
+                                        <li><a href="https://libros.facmed.unam.mx/index.php/2021/07/22/bioquimica-de-laguna-y-pina/">-BIOQUÍMICA de LAGUNA y PIÑA</a></li>
+                                        <li><a href="https://www.mayoclinic.org/es/departments-centers/laboratory-medicine-pathology/overview/specialty-groups/clinical-biochemistry-immunology">-Medicina de laboratorio y patología</a></li>
+                                        <li><a href=""></a></li>
+                                    </ul>
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    <ul>
+                                        <li><h3>Paguinas web</h3></li> 
+                                        <li><a href="https://www.salud.mapfre.es/pruebas-diagnosticas/laboratorio/hemograma-analisis-sangre-y-valores-referencia/">-Hemograma y sus valores normales</a></li>
+                                        <li><a href="https://laboratoriotenerife.com/analiticas-en-humanos/hematologia/#:~:text=Serie%20eritrocitaria%20o%20serie%20roja,dirigida%20al%20diagn%C3%B3stico%20de%20anemias.">-LABORATORIO Finca España</a></li>
+                                        <li><a href="https://es.wikipedia.org/wiki/Inmunolog%C3%ADa">-wikipedia</a></li>
+                                        <li><a href="https://concepto.de/bioquimica/">-concepto</a></li>
+                                    </ul>
+                                    
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                
+                                    <div class="contactos">
+                                        <li><h3>Integrantes del equipo:</h3></li>
+                                        <a href="">-Leslie Ramírez Hernández. <br>-María Fernanda Hernández Hernández. <br>-Valeria Hernández Ruiz.</a>
+                                    </div>
+                                </div>
+                        </section>
+                     </footer>
+                </body>                  
+         </html>
